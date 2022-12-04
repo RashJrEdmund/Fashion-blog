@@ -89,7 +89,7 @@ nav {
   padding: 15px 10px;
 }
 
-/* ENDING THE FASHION BLOG AND STARTING THE SUB WHOLE*/
+/* ENDING THE FASHION BLOG AND STARTING THE SUB WHOLE > COLUMN1 .BOX1*/
 
 .sub-whole {
   display: grid;
@@ -101,6 +101,7 @@ nav {
 .column1 .box1 {
   background-color: brown;
   padding:  2rem 1rem;
+  margin-bottom: 2rem;
 }
 
 .column1 .box1 > header {
@@ -114,19 +115,109 @@ nav {
   font-weight: 550;
 }
 
-.box1 p button {
-  border: none;
-  background: none;
+.column1 .box1 .title span {
   font-size: 19px;
   padding: 0;
   color: #d3d3d3;
 }
 
-.box1 img {
+.column1 .box1 img {
   width: 100%;
 }
 
-.box1 span {
+.column1 .box1 p > span {
   font-size: large;
   font-weight: 600;
 }
+
+.box-likes {
+  background-color: purple;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.box-likes button:nth-child(1) {
+  background: none;
+  border: 0.5px solid #000;
+  font-size: 1.4rem;
+  padding: 0.5rem 1rem;
+}
+
+.box-likes button:nth-child(1):hover {
+  background-color: #d3d3d3;
+}
+
+.box-likes button:nth-child(2) {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  font-size: 1.4rem;
+  padding: 0.5rem 1rem;
+}
+
+.box-likes button:nth-child(2):hover {
+  background-color: #808080;
+  color: #000;
+}
+
+.box-likes button:nth-child(2) span {
+  background-color: #fff;
+  color: #000;
+  border: none;
+  font-size: 1.4rem;
+  padding: 0.2rem 0.5rem;
+}
+
+.column1 .box1 hr {
+  margin: 2.5rem 0 1.5rem;
+  border: 1px solid #808080;
+}
+
+.box-footer {
+  background-color: purple;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.box-footer img {
+  width: 100px;
+}
+
+/* ENDING BOX1 AND STARTING BOX2*/
+
+.column1 .box2 {
+  background-color: brown;
+  padding:  2rem 1rem;
+  margin-bottom: 2rem;
+}
+
+.column1 .box2 > header {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 550;
+}
+
+.column1 .box2 .title {
+  text-align: center;
+  font-weight: 550;
+}
+
+.column1 .box2 .title span {
+  font-size: 19px;
+  padding: 0;
+  color: #d3d3d3;
+}
+
+column1 .box2 img {
+  width: 100%;
+}
+
+.box2 p > span {
+  font-size: large;
+  font-weight: 600;
+}
+
+/* ENDING COLUMN1 AND STARTING COLUMN2*/
