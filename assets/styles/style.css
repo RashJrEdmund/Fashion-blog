@@ -1,0 +1,132 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+nav {
+  background-color: #000;
+  height: 2.45rem;
+  width: 100vw;
+}
+
+.whole {
+  background-color: green;
+  width: 100vw;
+  max-width: 1600px;
+  margin: auto;
+}
+
+/* STARTING THE HEADING*/
+
+.heading {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 3.92rem 0;
+}
+
+.heading header {
+  font-size: 2.5rem;
+  font-weight: 900;
+}
+
+.heading p {
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  font-size: 14px;
+}
+
+.heading button {
+  border: none;
+  background-color: #000;
+  color: #fff;
+  font-size: large;
+}
+
+/* ENDING THE HEADING AND STARTING THE FASHION BLOG*/
+
+.fashion-blog {
+  background-color: brown;
+  background: url("../images/cover.png");
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+  width: 100%;
+  height: 100vmax;
+  max-height: 110vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 2rem;
+}
+
+.fashion-blog .text1 {
+  margin-bottom: 10px;
+  font-size: 2.5rem;
+}
+
+.fashion-blog .text2 {
+  font-size: 4rem;
+  font-weight: 900;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.fashion-blog button {
+  width: fit-content;
+  font-size: large;
+  font-weight: 650;
+  background-color: #ada8a8;
+  border: none;
+  padding: 15px 10px;
+}
+
+/* ENDING THE FASHION BLOG AND STARTING THE SUB WHOLE*/
+
+.sub-whole {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  padding: 1rem;
+}
+
+.column1 .box1 {
+  background-color: brown;
+  padding:  2rem 1rem;
+}
+
+.column1 .box1 > header {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 550;
+}
+
+.column1 .box1 .title {
+  text-align: center;
+  font-weight: 550;
+}
+
+.box1 p button {
+  border: none;
+  background: none;
+  font-size: 19px;
+  padding: 0;
+  color: #d3d3d3;
+}
+
+.box1 img {
+  width: 100%;
+}
+
+.box1 span {
+  font-size: large;
+  font-weight: 600;
+}
