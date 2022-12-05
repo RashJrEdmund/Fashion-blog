@@ -412,13 +412,11 @@ nav {
 .column2 .follow-me > div {
   padding: 0.5rem;
   background-color: green;
-}
-
-.column2 .follow-me .fa-brands {
-  background-color: yellowgreen;
-  height: 50px;
-  width: 50px;
-  size: 50px;
+  font-size: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
 .column2 .follow-me header {
