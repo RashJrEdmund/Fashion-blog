@@ -206,7 +206,6 @@ nav div:nth-child(2) {
 }
 
 .box-footer {
-  background-color: green;
   height: 120px;
   padding: 1rem;
   display: flex;
@@ -541,15 +540,10 @@ footer p a {
   }
 
   .box-footer {
-    background-color: gold;
     grid-template-columns: 1fr;
   }
 
   .box-footer img {
     width: 70px;
-  }
-
-  .box-footer div {
-    background-color: green;
   }
 }
