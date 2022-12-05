@@ -12,13 +12,30 @@ body {
 
 nav {
   background-color: #000;
-  height: 2.45rem;
-  width: 100vw;
+  color: #fff;
+  height: fit-content;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  width: 100%;
+  padding: 10px 0 5px 10px;
+  font-size: 20px;
+}
+
+nav div:nth-child(1) {
+  width: 300px;
+  display: flex;
+  justify-content: space-around;
+}
+
+nav div:nth-child(2) {
+  width: 50px;
+  text-align: center;
 }
 
 .whole1 {
   background-color: #fff;
-  width: 100vw;
+  width: 100%;
   max-width: 1600px;
   margin: auto;
 }
@@ -99,10 +116,9 @@ nav {
   grid-template-columns: 65% 1fr;
   gap: 2rem;
   padding: 1rem;
-  background-color: green;
-  width: 100vw;
+  width: 100%;
   max-width: 1600px;
-  margin: 10px auto 0;
+  margin:auto;
 }
 
 .column1 {
@@ -183,21 +199,24 @@ nav {
 }
 
 .column1 .box1 hr {
+  background-color: #808080;
   margin: 2.5rem 0 1.5rem;
-  border: 1px solid #808080;
+  height: 1px;
+  border: none;
 }
 
 .box-footer {
-  display: grid;
-  grid-template-columns: 1fr 3fr;
+  background-color: green;
+  height: 120px;
+  padding: 1rem;
+  display: flex;
+  gap: 1rem;
   align-items: center;
-  column-gap: 1rem;
-  height: 150px;
 }
 
 .box-footer img {
-  width: 60px;
-  max-height: 100%;
+  max-width: 90px;
+  max-height: 90px;
 }
 
 /* ENDING BOX1 AND STARTING BOX2*/
@@ -237,7 +256,6 @@ nav {
 /* ENDING COLUMN1 AND STARTING COLUMN2*/
 
 .column2 {
-  background-color: aqua;
   width: 100%;
   height: fit-content;
   overflow: hidden;
@@ -410,13 +428,16 @@ nav {
 }
 
 .column2 .follow-me > div {
-  padding: 0.5rem;
-  background-color: green;
-  font-size: 40px;
+  padding: 0.5rem 5px;
+  font-size: 1.5rem;
+  letter-spacing: 5px;
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-evenly;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.column2 .follow-me > div  span {
+  letter-spacing: normal;
 }
 
 .column2 .follow-me header {
@@ -487,14 +508,18 @@ footer button {
   color: #fff;
   border: none;
   font-size: larger;
-  padding: 1rem 2rem;
+  padding: 1rem;
+}
+
+footer i {
+  font-size: 20px;
+  font-weight: 1000;
+  margin-right: 10px;
 }
 
 footer button:hover {
   background-color: #ada8a8;
   color: #000;
-  font-size: larger;
-  padding: 1rem 2rem;
 }
 
 footer p a {
@@ -502,6 +527,10 @@ footer p a {
 }
 
 @media only screen and (max-width: 600px){
+  nav {
+    display: none;
+  }
+
   .whole2 {
     padding: 5px;
     grid-template-columns: 1fr;
@@ -513,7 +542,11 @@ footer p a {
 
   .box-footer {
     background-color: gold;
-    display: flex;
+    grid-template-columns: 1fr;
+  }
+
+  .box-footer img {
+    width: 70px;
   }
 
   .box-footer div {
