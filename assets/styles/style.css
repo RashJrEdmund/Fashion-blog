@@ -1,0 +1,549 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  background-color: #f1f1f1;
+}
+
+nav {
+  background-color: #000;
+  color: #fff;
+  height: fit-content;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  width: 100%;
+  padding: 10px 0 5px 10px;
+  font-size: 20px;
+}
+
+nav div:nth-child(1) {
+  width: 300px;
+  display: flex;
+  justify-content: space-around;
+}
+
+nav div:nth-child(2) {
+  width: 50px;
+  text-align: center;
+}
+
+.whole1 {
+  background-color: #fff;
+  width: 100%;
+  max-width: 1600px;
+  margin: auto;
+}
+
+/* STARTING THE HEADING*/
+
+.heading {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 3.92rem 0;
+}
+
+.heading header {
+  font-size: 2.5rem;
+  font-weight: 900;
+}
+
+.heading p {
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  font-size: 14px;
+}
+
+.heading button {
+  border: none;
+  background-color: #000;
+  color: #fff;
+  font-size: large;
+}
+
+/* ENDING THE HEADING AND STARTING THE FASHION BLOG*/
+
+.fashion-blog {
+  background-color: brown;
+  background: url("../images/cover.png");
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+  width: 100%;
+  height: 100vmax;
+  max-height: 110vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 2rem;
+}
+
+.fashion-blog .text1 {
+  margin-bottom: 10px;
+  font-size: 2.5rem;
+}
+
+.fashion-blog .text2 {
+  font-size: 4rem;
+  font-weight: 900;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.fashion-blog button {
+  width: fit-content;
+  font-size: large;
+  font-weight: 650;
+  background-color: #ada8a8;
+  border: none;
+  padding: 15px 10px;
+}
+
+/* ENDING THE FASHION BLOG AND STARTING THE SUB WHOLE > COLUMN1 .BOX1*/
+
+.whole2 {
+  border: 1px solid #ada8a8;
+  border-bottom: none;
+  display: grid;
+  grid-template-columns: 65% 1fr;
+  gap: 2rem;
+  padding: 1rem;
+  width: 100%;
+  max-width: 1600px;
+  margin:auto;
+}
+
+.column1 {
+  width: 100%;
+  height: fit-content;
+}
+
+.column1 .box1 {
+  background-color: #fff;
+  height: fit-content;
+  padding:  2rem 1rem;
+  margin-bottom: 2rem;
+}
+
+.column1 .box1 > header {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 550;
+}
+
+.column1 .box1 .title {
+  text-align: center;
+  font-weight: 550;
+}
+
+.column1 .box1 .title span {
+  font-size: 19px;
+  padding: 0;
+  color: #d3d3d3;
+}
+
+.column1 .box1 img {
+  width: 100%;
+}
+
+.column1 .box1 p > span {
+  font-size: large;
+  font-weight: 600;
+}
+
+.box-likes {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.box-likes button:nth-child(1) {
+  background: none;
+  border: 0.5px solid #000;
+  font-size: 1.4rem;
+  padding: 0.5rem 1rem;
+}
+
+.box-likes button:nth-child(1):hover {
+  background-color: #d3d3d3;
+}
+
+.box-likes button:nth-child(2) {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  font-size: 1.4rem;
+  padding: 0.5rem 1rem;
+}
+
+.box-likes button:nth-child(2):hover {
+  background-color: #808080;
+  color: #000;
+}
+
+.box-likes button:nth-child(2) span {
+  background-color: #fff;
+  color: #000;
+  border: none;
+  font-size: 1.4rem;
+  padding: 0.2rem 0.5rem;
+}
+
+.column1 .box1 hr {
+  background-color: #808080;
+  margin: 2.5rem 0 1.5rem;
+  height: 1px;
+  border: none;
+}
+
+.box-footer {
+  height: 120px;
+  padding: 1rem;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.box-footer img {
+  max-width: 90px;
+  max-height: 90px;
+}
+
+/* ENDING BOX1 AND STARTING BOX2*/
+
+.column1 .box2 {
+  background-color: #fff;
+  padding:  2rem 1rem;
+  margin-bottom: 2rem;
+}
+
+.column1 .box2 > header {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 550;
+}
+
+.column1 .box2 .title {
+  text-align: center;
+  font-weight: 550;
+}
+
+.column1 .box2 .title span {
+  font-size: 19px;
+  padding: 0;
+  color: #d3d3d3;
+}
+
+.box2 img {
+  width: 100%;
+}
+
+.box2 p > span {
+  font-size: large;
+  font-weight: 600;
+}
+
+/* ENDING COLUMN1 AND STARTING COLUMN2*/
+
+.column2 {
+  width: 100%;
+  height: fit-content;
+  overflow: hidden;
+}
+
+.column2 .box1 {
+  width: 100%;
+  height: fit-content;
+  margin-bottom: 2rem;
+}
+
+.column2 .box1 img {
+  width: 100%;
+}
+
+.column2 .box1 > div {
+  background-color: #000;
+  color: #fff;
+  margin-top: 3px;
+  padding: 0.6rem 1rem 0.3rem;
+}
+
+.column2 .box1 > div header {
+  font-size: 1.3rem;
+  margin: 0;
+}
+
+.column2 .popular-post {
+  background-color: #fff;
+  margin-bottom: 2rem;
+  height: fit-content;
+  width: 100%;
+}
+
+.column2 .popular-post > header {
+  background-color: #000;
+  color: #fff;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  padding-left: 1rem;
+  font-size: 19px;
+  font-weight: 600;
+}
+
+.column2 .popular-post > div {
+  height: fit-content;
+}
+
+.column2 .popular-divs {
+  padding: 1rem;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.column2 .popular-divs:hover {
+  background-color: #ada8a8
+}
+
+/* .column2 .popular-divs hr {
+  margin: 10px 0;
+  border: 1px solid black;
+} */
+
+.column2 .popular-divs img {
+  width: 70px;
+  height: 70px;
+}
+
+.column2 .advertise {
+  background-color: #fff;
+  padding-bottom: 0.5rem;
+  height: fit-content;
+  margin-bottom: 2rem;
+}
+
+.column2 .advertise header {
+  background-color: #000;
+  color: #fff;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  padding-left: 1rem;
+  font-size: 19px;
+  font-weight: 600;
+}
+
+.column2 .advertise > div {
+  background-color: #f1f1f1;
+  margin: 1rem 1rem 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 15rem;
+}
+
+.column2 .tags {
+  background-color: #fff;
+  padding-bottom: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.column2 .tags header {
+  background-color: #000;
+  color: #fff;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  padding-left: 1rem;
+  font-size: 19px;
+  font-weight: 600;
+}
+
+.column2 .tags > div {
+  margin: 1rem 1rem 0.5rem;
+}
+
+
+.column2 .tags button {
+  background-color: #f1f1f1;
+  border: none;
+  padding: 5px;
+  margin: 5px 2px;
+}
+
+.column2 .tags .dark-box {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 7px 10px;
+  margin: 5px 2px;
+}
+
+.column2 .inspiration {
+  background-color: #fff;
+  padding-bottom: 0.5rem;
+  height: fit-content;
+  margin-bottom: 2rem;
+}
+
+.column2 .inspiration header {
+  background-color: #000;
+  color: #fff;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  padding-left: 1rem;
+  font-size: 19px;
+  font-weight: 600;
+}
+
+.column2 .inspiration > div {
+  margin: 1rem 1rem 0.5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.8rem;
+}
+
+.column2 .inspiration img {
+  width: 100%;
+  height: 100%;
+}
+
+.column2 .follow-me {
+  background-color: #fff;
+  height: fit-content;
+  margin-bottom: 2rem;
+}
+
+.column2 .follow-me > div {
+  padding: 0.5rem 5px;
+  font-size: 1.5rem;
+  letter-spacing: 5px;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.column2 .follow-me > div  span {
+  letter-spacing: normal;
+}
+
+.column2 .follow-me header {
+  background-color: #000;
+  color: #fff;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  padding-left: 1rem;
+  font-size: 19px;
+  font-weight: 600;
+}
+
+.column2 .subscribe {
+  background-color: #fff;
+  padding-bottom: 0.5rem;
+  height: fit-content;
+}
+
+.column2 .subscribe header {
+  background-color: #000;
+  color: #fff;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  padding-left: 1rem;
+  font-size: 19px;
+  font-weight: 600;
+}
+
+.column2 .subscribe > div {
+  margin: 1rem 1rem 0.5rem;
+  gap: 0.8rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.column2 .subscribe input {
+  height: 3rem;
+  padding-left: 10px;
+  font-size: 17px;
+}
+
+.column2 .subscribe button {
+  background-color: #f44336;
+  color: #fff;
+  height: 3rem;
+  font-size: 17px;
+  border: none;
+}
+
+.column2 .subscribe button:hover {
+  background-color: #ada8a8;
+  color: #000;
+}
+
+/* ENDING COLUMN2 AND STARTING THE FOOTER*/
+
+footer {
+  background-color: #808080;
+  color: #fff;
+  height: 10rem;
+  padding: 2rem 1rem;
+}
+
+footer button {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  font-size: larger;
+  padding: 1rem;
+}
+
+footer i {
+  font-size: 20px;
+  font-weight: 1000;
+  margin-right: 10px;
+}
+
+footer button:hover {
+  background-color: #ada8a8;
+  color: #000;
+}
+
+footer p a {
+  color: #fff;
+}
+
+@media only screen and (max-width: 600px){
+  nav {
+    display: none;
+  }
+
+  .whole2 {
+    padding: 5px;
+    grid-template-columns: 1fr;
+  }
+
+  .fashion-blog .text2 {
+    display: none;
+  }
+
+  .box-footer {
+    grid-template-columns: 1fr;
+  }
+
+  .box-footer img {
+    width: 70px;
+  }
+}
